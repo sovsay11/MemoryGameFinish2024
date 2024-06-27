@@ -3,280 +3,263 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MemoryGameFinish2024.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout>
-            <!--Title-->
-            <Frame BackgroundColor="White">
-                <VerticalStackLayout>
-                    <Label Text="Gotta Match 'Em All!"
-                           TextColor="Black"
-                           FontSize="Title"
-                           FontAttributes="Bold"
-                           VerticalTextAlignment="Center"
-                           HorizontalTextAlignment="Center"
-                           Margin="10" />
-                    <Label Text="Please select number of players"
-                           TextColor="Black"
-                           HorizontalTextAlignment="Center"
-                           FontSize="Body" />
-                    <HorizontalStackLayout HorizontalOptions="Center">
-                        <RadioButton x:Name="RadioButtonOnePlayer"
-                                     HorizontalOptions="Start"
-                                     TextColor="Black"
-                                     IsChecked="True"
-                                     Content="1 Player" />
-                        <RadioButton x:Name="RadioButtonTwoPlayers"
-                                     TextColor="Black"
-                                     HorizontalOptions="End"
-                                     Content="2 Players" />
-                    </HorizontalStackLayout>
-                </VerticalStackLayout>
-            </Frame>
+  <ScrollView>
+    <VerticalStackLayout>
+      <!--Title-->
+      <Frame BackgroundColor="White">
+        <Label Text="Gotta Match 'Em All!"
+               TextColor="Black"
+               FontSize="Title"
+               FontAttributes="Bold"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10" />
+      </Frame>
 
-            <!--Number of turns-->
-            <Frame>
-                <HorizontalStackLayout>
-                    <Label Text="Number of turns:"
-                           TextColor="Black" />
-                    <Label x:Name="LabelNumberOfTurns"
-                           TextColor="Black" />
-                </HorizontalStackLayout>
-            </Frame>
+      <!--Number of turns-->
+      <Frame>
+        <HorizontalStackLayout>
+          <Label Text="Number of turns:"
+                 TextColor="Black" />
+          <Label x:Name="LabelNumberOfTurns"
+                 TextColor="Black" />
+        </HorizontalStackLayout>
+      </Frame>
 
-            <!--Card Grid-->
-            <Grid x:Name="CardsGrid"
-                  HorizontalOptions="Center"
-                  HeightRequest="400"
-                  WidthRequest="400"
-                  Margin="5">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+      <!--Card Grid-->
+      <Grid x:Name="CardsGrid"
+            HorizontalOptions="Center"
+            HeightRequest="400"
+            WidthRequest="400"
+            Margin="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
-                <!--Card 1-->
-                <Frame Grid.Row="0"
-                       Grid.Column="0"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card1"
-                                 ClassId="1"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 1-->
+        <Frame Grid.Row="0"
+               Grid.Column="0"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card1"
+                       ClassId="1"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 2-->
-                <Frame Grid.Row="0"
-                       Grid.Column="1"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card2"
-                                 ClassId="2"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 2-->
+        <Frame Grid.Row="0"
+               Grid.Column="1"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card2"
+                       ClassId="2"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 3-->
-                <Frame Grid.Row="0"
-                       Grid.Column="2"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card3"
-                                 ClassId="3"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 3-->
+        <Frame Grid.Row="0"
+               Grid.Column="2"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card3"
+                       ClassId="3"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 4-->
-                <Frame Grid.Row="0"
-                       Grid.Column="3"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card4"
-                                 ClassId="4"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 4-->
+        <Frame Grid.Row="0"
+               Grid.Column="3"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card4"
+                       ClassId="4"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 5-->
-                <Frame Grid.Row="1"
-                       Grid.Column="0"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card5"
-                                 ClassId="5"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 5-->
+        <Frame Grid.Row="1"
+               Grid.Column="0"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card5"
+                       ClassId="5"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 6-->
-                <Frame Grid.Row="1"
-                       Grid.Column="1"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card6"
-                                 ClassId="6"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 6-->
+        <Frame Grid.Row="1"
+               Grid.Column="1"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card6"
+                       ClassId="6"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 7-->
-                <Frame Grid.Row="1"
-                       Grid.Column="2"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card7"
-                                 ClassId="7"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 7-->
+        <Frame Grid.Row="1"
+               Grid.Column="2"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card7"
+                       ClassId="7"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 8-->
-                <Frame Grid.Row="1"
-                       Grid.Column="3"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card8"
-                                 ClassId="8"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 8-->
+        <Frame Grid.Row="1"
+               Grid.Column="3"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card8"
+                       ClassId="8"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 9-->
-                <Frame Grid.Row="2"
-                       Grid.Column="0"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card9"
-                                 ClassId="9"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 9-->
+        <Frame Grid.Row="2"
+               Grid.Column="0"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card9"
+                       ClassId="9"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 10-->
-                <Frame Grid.Row="2"
-                       Grid.Column="1"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card10"
-                                 ClassId="10"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 10-->
+        <Frame Grid.Row="2"
+               Grid.Column="1"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card10"
+                       ClassId="10"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 11-->
-                <Frame Grid.Row="2"
-                       Grid.Column="2"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card11"
-                                 ClassId="11"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 11-->
+        <Frame Grid.Row="2"
+               Grid.Column="2"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card11"
+                       ClassId="11"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 12-->
-                <Frame Grid.Row="2"
-                       Grid.Column="3"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card12"
-                                 ClassId="12"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 12-->
+        <Frame Grid.Row="2"
+               Grid.Column="3"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card12"
+                       ClassId="12"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 13-->
-                <Frame Grid.Row="3"
-                       Grid.Column="0"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card13"
-                                 ClassId="13"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 13-->
+        <Frame Grid.Row="3"
+               Grid.Column="0"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card13"
+                       ClassId="13"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 14-->
-                <Frame Grid.Row="3"
-                       Grid.Column="1"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card14"
-                                 ClassId="14"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 14-->
+        <Frame Grid.Row="3"
+               Grid.Column="1"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card14"
+                       ClassId="14"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 15-->
-                <Frame Grid.Row="3"
-                       Grid.Column="2"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card15"
-                                 ClassId="15"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
+        <!--Card 15-->
+        <Frame Grid.Row="3"
+               Grid.Column="2"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card15"
+                       ClassId="15"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
 
-                <!--Card 16-->
-                <Frame Grid.Row="3"
-                       Grid.Column="3"
-                       Padding="0"
-                       BorderColor="Black">
-                    <ImageButton x:Name="Card16"
-                                 ClassId="16"
-                                 Margin="1"
-                                 BackgroundColor="White"
-                                 CornerRadius="10"
-                                 Clicked="CardButton_Clicked" />
-                </Frame>
-            </Grid>
+        <!--Card 16-->
+        <Frame Grid.Row="3"
+               Grid.Column="3"
+               Padding="0"
+               BorderColor="Black">
+          <ImageButton x:Name="Card16"
+                       ClassId="16"
+                       Margin="1"
+                       BackgroundColor="White"
+                       CornerRadius="10"
+                       Clicked="CardButton_Clicked" />
+        </Frame>
+      </Grid>
 
-            <!--Shuffle button-->
-            <Button Text="Shuffle Board"
-                    x:Name="ButtonShuffle"
-                    Clicked="ButtonShuffle_Clicked" />
+      <!--Shuffle button-->
+      <Button Text="Shuffle Board"
+              x:Name="ButtonShuffle"
+              Clicked="ButtonShuffle_Clicked" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+    </VerticalStackLayout>
+  </ScrollView>
 
 </ContentPage>
